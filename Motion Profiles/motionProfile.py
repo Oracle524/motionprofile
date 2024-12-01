@@ -12,8 +12,10 @@ def profile(displacement: float, start: float, time: list[float], Ta: float) -> 
     T = 2*Ta 
     Tm = max(time)
     Tb = Tm - 2*Ta
-    am = ((np.pi**2)*displacement)/(2* (T**2))
-    Da = (am*((2*Ta)**2))/(np.pi)**2
+    am = displacement*np.pi**2 / (8*Ta**2+2*Ta*(Tm-Ta)*np.pi)
+    Da = displacement/2 - (am*2*Ta*(Tm-2*Ta))/(2*np.pi)
+    #am = ((np.pi**2)*2*Da)/(2* (T**2))
+    #Da = (am*((2*Ta)**2))/(np.pi)**2
 
     for t in time: # loop to get all the motion data 
         if 0 <= t < Ta: # Accleration part 
