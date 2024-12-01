@@ -12,7 +12,7 @@ def profile(displacement: float, start: float, time: list[float], Ta: float) -> 
     T = 2*Ta 
     Tm = max(time)
     Tb = Tm - 2*Ta
-    am = displacement*np.pi**2 / (8*Ta**2+2*Ta*(Tm-Ta)*np.pi)
+    am = displacement*np.pi**2 / (8*Ta**2+2*Ta*(Tm-2*Ta)*np.pi)
     Da = displacement/2 - (am*2*Ta*(Tm-2*Ta))/(2*np.pi)
     #am = ((np.pi**2)*2*Da)/(2* (T**2))
     #Da = (am*((2*Ta)**2))/(np.pi)**2
