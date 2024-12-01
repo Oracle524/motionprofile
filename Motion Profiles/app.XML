@@ -1,0 +1,37 @@
+<app>
+    <Title>ROBT 3341: Motion Profiler</Title>
+    <appTitle>Motion Profiler</appTitle>
+    <Dimension>1701x810</Dimension>
+    <Font>@Yu Gothic UI Semibold</Font>
+    <MainBGColor>#424242</MainBGColor>
+    <ControlBGColor>#180042</ControlBGColor>
+    <ControlFontColor>#F5AA1C</ControlFontColor>
+    <DisplayBGColor>#F8C15A</DisplayBGColor>
+    <AccentColor1>#C63527</AccentColor1>
+    <AccentColor2>#310085</AccentColor2>
+    <page name="Motion Profile">
+        <weightCX>0</weightCX>
+        <weightCY>0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1</weightCY>
+        <weightC2X>1,1,1,1</weightC2X>
+        <weightC2Y>0, 0</weightC2Y>
+        <weightDX>1</weightDX>
+        <weightDY>1</weightDY>
+    </page>
+    <page name="Joint Interpolation">
+        <weightCX>1</weightCX>
+        <weightCY>0, 0, 0, 0, 0, 0, 0, 0, 1</weightCY>
+        <weightC2X>0, 1</weightC2X>
+        <weightC2Y>0, 0, 0, 0</weightC2Y>
+        <weightDX>1</weightDX>
+        <weightDY>1</weightDY>
+    </page>
+        <page name="Joint Interpolation++">
+        <weightCX>0</weightCX>
+        <weightCY>0, 0, 0, 0, 0, 0, 1</weightCY>
+        <weightC2X>0, 1</weightC2X>
+        <weightC2Y>0, 0, 0, 0</weightC2Y>
+        <weightDX>1</weightDX>
+        <weightDY>1</weightDY>
+    </page>
+
+</app>
